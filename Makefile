@@ -3,7 +3,7 @@
 # vagrant, 2016-07-24 12:42
 #
 
-VERSION=0.3
+VERSION=0.4
 NAME=mhristof/mvn-make
 
 default: build
