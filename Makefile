@@ -3,18 +3,18 @@
 # vagrant, 2016-07-24 12:42
 #
 
-VERSION=0.4
+VERSION=0.6
 NAME=mhristof/mvn-make
 
 default: build
 
-tag:
+tag: build
 	docker tag $(NAME) $(NAME):$(VERSION)
 	docker tag $(NAME) $(NAME):latest
-	#git tag $(VERSION)
+	git tag $(VERSION)
 
-push:
-	#git push --tags
+push: tag
+	git push --tags
 	docker push $(NAME):$(VERSION)
 	docker push $(NAME):latest
 
