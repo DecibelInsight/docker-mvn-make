@@ -9,6 +9,7 @@ RUN apk --no-cache add \
 	openssl \
 	git \
 	mysql-client \
+	perl \
     && update-ca-certificates
 COPY create_mysql.sh /bin/
 WORKDIR /data
