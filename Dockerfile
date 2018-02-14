@@ -8,6 +8,7 @@ RUN apk --no-cache add \
 	ca-certificates \
 	openssl \
 	git \
+	openssh \
 	mysql-client \
 	perl \
     && update-ca-certificates
