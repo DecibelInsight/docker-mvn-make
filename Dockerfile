@@ -1,4 +1,4 @@
-FROM maven:3.5.4-jdk-10-slim
+FROM maven:3.6.2-jdk-11
 MAINTAINER Automation Team <devops@decibelinsight.com>
 
 RUN apt-get update && apt-get install -y git wget make iputils-ping binutils mysql-client && apt-get clean
